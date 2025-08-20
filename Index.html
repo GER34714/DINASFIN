@@ -8,7 +8,6 @@
 <!-- Meta Open Graph para vista previa -->
 <meta property="og:title" content="DINASTY BET ™ - Tu nueva experiencia de casino online">
 <meta property="og:description" content="🎰 Bienvenido a la nueva era del juego online ✨. Juega responsablemente y diviértete con DINASTY BET ™.">
-<!-- Aquí solo agregamos la imagen para la preview -->
 <meta property="og:image" content="https://i.ibb.co/1z0xP6G/dinasty-preview.png">
 <meta property="og:url" content="https://tulanding.render.com">
 <meta property="og:type" content="website">
@@ -19,20 +18,145 @@
 <meta name="twitter:description" content="🎰 Bienvenido a la nueva era del juego online ✨. Juega responsablemente y diviértete con DINASTY BET ™.">
 <meta name="twitter:image" content="https://i.ibb.co/1z0xP6G/dinasty-preview.png">
 
-<!-- Tus estilos CSS ya existentes van acá -->
 <style>
-/* ... aquí va todo tu CSS tal cual lo tenías ... */
+/* ============================
+   Estilos generales
+============================ */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #ffd700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  max-width: 400px;
+  padding: 20px;
+}
+
+/* ============================
+   Logo animado
+============================ */
+.croupier-logo {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 12px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+/* ============================
+   Texto de bienvenida
+============================ */
+.welcome-text {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffd700;
+  font-weight: bold;
+  text-shadow: 0 0 1px #ffd700, 0 0 2px #ffcc00;
+}
+
+/* ============================
+   Botón de WhatsApp
+============================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  background: #000;
+  color: #25D366;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  border: 2px solid #25D366;
+  box-shadow: 0 0 12px #25D366, 0 0 25px #25D366 inset;
+  text-shadow: 0 0 8px #25D366;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn img {
+  width: 36px;
+  height: 36px;
+}
+
+.btn:hover {
+  color: #fff;
+  text-shadow: 0 0 12px #25D366, 0 0 25px #25D366 inset;
+  box-shadow: 0 0 25px #25D366, 0 0 35px #25D366 inset;
+  transform: scale(1.05);
+}
+
+/* ============================
+   Redes sociales
+============================ */
+.social-text {
+  font-size: 0.9rem;
+  color: #ffcc00;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.social-icons a img {
+  width: 36px;
+  height: 36px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.3);
+  box-shadow: 0 0 10px #ffcc00, 0 0 20px #ffd700;
+}
+
+/* ============================
+   Textos legales
+============================ */
+.legal {
+  font-size: 0.75rem;
+  color: #ffcc00;
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+/* ============================
+   Responsive
+============================ */
+@media (max-width: 450px) {
+  .welcome-text { font-size: 1.8rem; }
+  .btn { font-size: 0.75rem; padding: 3px 6px; }
+  .btn img { width: 28px; height: 28px; }
+  .croupier-logo { max-width: 280px; }
+  .social-icons a img { width: 28px; height: 28px; }
+}
 </style>
 </head>
 <body>
 
 <div class="container">
-  <!-- Tu logo de croupier queda igual, no se toca -->
   <div class="logo-container">
     <img src="https://raw.githubusercontent.com/GER34714/DINASTY-BET/refs/heads/main/IMG-20250818-WA0033(1).jpg" alt="Logo DINASTY BET" class="croupier-logo">
   </div>
 
-  <!-- Resto del contenido de la landing -->
   <div class="welcome-text">🎰 Bienvenido a la nueva era del juego online ✨</div>
 
   <div class="btn-container">
@@ -56,7 +180,6 @@
   <div class="legal">⚠️ Jugar compulsivamente es perjudicial para la salud ⚠️</div>
 </div>
 
-<!-- Tu script de WhatsApp existente -->
 <script>
 const numbers = ["5491123365501","5491159255356"];
 let currentIndex = 0;
@@ -73,4 +196,3 @@ btn.addEventListener("click", function(e){
 
 </body>
 </html>
-
