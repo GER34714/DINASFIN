@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DINASTY BET ™</title>
+
+<!-- Meta Open Graph para vista previa -->
+<meta property="og:title" content="DINASTY BET ™ - Tu nueva experiencia de casino online">
+<meta property="og:description" content="🎰 Bienvenido a la nueva era del juego online ✨. Juega responsablemente y diviértete con DINASTY BET ™.">
+<!-- Aquí solo agregamos la imagen para la preview -->
+<meta property="og:image" content="https://i.ibb.co/1z0xP6G/dinasty-preview.png">
+<meta property="og:url" content="https://tulanding.render.com">
+<meta property="og:type" content="website">
+
+<!-- Meta Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DINASTY BET ™ - Tu nueva experiencia de casino online">
+<meta name="twitter:description" content="🎰 Bienvenido a la nueva era del juego online ✨. Juega responsablemente y diviértete con DINASTY BET ™.">
+<meta name="twitter:image" content="https://i.ibb.co/1z0xP6G/dinasty-preview.png">
+
+<!-- Tus estilos CSS ya existentes van acá -->
+<style>
+/* ... aquí va todo tu CSS tal cual lo tenías ... */
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Tu logo de croupier queda igual, no se toca -->
+  <div class="logo-container">
+    <img src="https://raw.githubusercontent.com/GER34714/DINASTY-BET/refs/heads/main/IMG-20250818-WA0033(1).jpg" alt="Logo DINASTY BET" class="croupier-logo">
+  </div>
+
+  <!-- Resto del contenido de la landing -->
+  <div class="welcome-text">🎰 Bienvenido a la nueva era del juego online ✨</div>
+
+  <div class="btn-container">
+    <a class="btn" id="whatsappBtn">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+      📲 Contáctanos por WhatsApp
+    </a>
+  </div>
+
+  <div class="social-text">🔔 Seguinos en nuestras redes sociales OFICIALES</div>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/profile.php?id=61577106993071" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_(2019).png" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/team_dinastybet?igsh=aXY5dTR0cHA3YTQw" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+    </a>
+  </div>
+
+  <div class="legal">🔞 No apto para menores de 18 años.</div>
+  <div class="legal">⚠️ Jugar compulsivamente es perjudicial para la salud ⚠️</div>
+</div>
+
+<!-- Tu script de WhatsApp existente -->
+<script>
+const numbers = ["5491123365501","5491159255356"];
+let currentIndex = 0;
+const message = "hola, me creas un usuario?";
+
+const btn = document.getElementById("whatsappBtn");
+btn.addEventListener("click", function(e){
+  e.preventDefault();
+  const link = `https://wa.me/${numbers[currentIndex]}?text=${encodeURIComponent(message)}`;
+  currentIndex = (currentIndex + 1) % numbers.length;
+  window.open(link, "_blank");
+});
+</script>
+
+</body>
+</html>
 
